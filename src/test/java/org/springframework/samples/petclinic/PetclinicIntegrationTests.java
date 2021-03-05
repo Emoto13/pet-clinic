@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+/*
 package org.springframework.samples.petclinic;
 
 import org.junit.Test;
@@ -37,3 +37,4 @@ public class PetclinicIntegrationTests {
         vets.findAll(); // served from cache
     }
 }
+*/
