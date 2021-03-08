@@ -331,4 +331,6 @@
 		</license>
 	</licenses>
         -->
+		</plugins>
+	</build> 
 </project>
