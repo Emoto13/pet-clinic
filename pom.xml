@@ -278,34 +278,47 @@
 					<failOnNoGitDirectory>false</failOnNoGitDirectory>
 				</configuration>
 			</plugin>
-
-			<plugin>
-				<groupId>ro.isdc.wro4j</groupId>
-				<artifactId>wro4j-maven-plugin</artifactId>
-				<version>${wro4j.version}</version>
-				<executions>
-					<execution>
-						<phase>generate-resources</phase>
-						<goals>
-							<goal>run</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
-					<cssDestinationFolder>${project.build.directory}/classes/static/resources/css</cssDestinationFolder>
-					<wroFile>${basedir}/src/main/wro/wro.xml</wroFile>
-					<extraConfigFile>${basedir}/src/main/wro/wro.properties</extraConfigFile>
-					<contextFolder>${basedir}/src/main/less</contextFolder>
-				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>org.webjars</groupId>
-						<artifactId>bootstrap</artifactId>
-						<version>${webjars-bootstrap.version}</version>
-					</dependency>
-				</dependencies>
-			</plugin>
+			
+			//<plugin>
+			//	<groupId>org.apache.maven.plugins</groupId>
+			//	<artifactId>maven-compiler-plugin</artifactId>
+			//	<configuration>
+			//		<source>${java-version}</source>
+			//		<target>${java-version}</target>
+			//		<verbose>true</verbose>
+			//		<fork>true</fork>
+			//		<executable>/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/bin/javac</executable>
+			//		<compilerVersion>1.8</compilerVersion>
+			//	</configuration>
+			//</plugin>
+//
+			//<plugin>
+			//	<groupId>ro.isdc.wro4j</groupId>
+			//	<artifactId>wro4j-maven-plugin</artifactId>
+			//	<version>${wro4j.version}</version>
+			//	<executions>
+			//		<execution>
+			//			<phase>generate-resources</phase>
+			//			<goals>
+			//				<goal>run</goal>
+			//			</goals>
+			//		</execution>
+			//	</executions>
+			//	<configuration>
+			//		<wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+			//		<cssDestinationFolder>${project.build.directory}/classes/static/resources/css</cssDestinationFolder>
+			//		<wroFile>${basedir}/src/main/wro/wro.xml</wroFile>
+			//		<extraConfigFile>${basedir}/src/main/wro/wro.properties</extraConfigFile>
+			//		<contextFolder>${basedir}/src/main/less</contextFolder>
+			//	</configuration>
+			//	<dependencies>
+			//		<dependency>
+			//			<groupId>org.webjars</groupId>
+			//			<artifactId>bootstrap</artifactId>
+			//			<version>${webjars-bootstrap.version}</version>
+			//		</dependency>
+			//	</dependencies>
+			//</plugin>
 		</plugins>
 	</build>
 
