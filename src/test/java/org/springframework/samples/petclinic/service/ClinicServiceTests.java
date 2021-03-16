@@ -1,4 +1,4 @@
-/*
+
 
 package org.springframework.samples.petclinic.service;
 
@@ -25,7 +25,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
+/*
  * Integration test of the Service and the Repository layer.
  * <p>
  * ClinicServiceSpringDataJpaTests subclasses benefit from the following services provided by the Spring
@@ -45,6 +45,7 @@ import org.springframework.transaction.annotation.Transactional;
  * @author Michael Isvy
  * @author Dave Syer
  
+*/
 
 @RunWith(SpringRunner.class)
 @DataJpaTest(includeFilters = @ComponentScan.Filter(Service.class))
@@ -206,4 +207,4 @@ public class ClinicServiceTests {
     }
 
 }
-*/
+
