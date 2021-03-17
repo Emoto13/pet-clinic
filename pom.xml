@@ -14,7 +14,7 @@
 	</parent>
 
 	<name>petclinic</name>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<properties>
 
@@ -41,10 +41,20 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 			<version>2.2.1.RELEASE</version>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
+			<exclusions>
+       				 <exclusion>
+           				 <groupId>com.fasterxml.jackson.core</groupId>
+           			 	 <artifactId>jackson-annotations</artifactId>
+       				 </exclusion>
+   			 </exclusions>
 		</dependency>
+		<dependency>
+    			<groupId>com.fasterxml.jackson.core</groupId>
+    			<artifactId>jackson-annotations</artifactId>
+    		</dependency>-->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-websocket</artifactId>
@@ -226,14 +236,14 @@
 						<goals>
 							<goal>build-info</goal>
 						</goals>
-						<configuration>
+						<!--<configuration>
 							<additionalProperties>
 								<encoding.source>${project.build.sourceEncoding}</encoding.source>
 								<encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>
 								<java.source>${maven.compiler.source}</java.source>
 								<java.target>${maven.compiler.target}</java.target>
 							</additionalProperties>
-						</configuration>
+						</configuration>-->
 					</execution>
 				</executions>
 			</plugin>
