@@ -14,4 +14,4 @@ WORKDIR /usr/local/lib
 COPY --from=build /home/app/target/petclinic-1.0.jar ./petclinic-1.0.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","petclinic-1.0.jar"]
-CMD ["mvn", "spring-boot:run"]
+#CMD ["mvn", "spring-boot:run"]
